@@ -62,7 +62,7 @@ const firebaseConfig = {
         alert("user signin successfuly")
         var user = userCredential.user;
         console.log("user", user.email);
-        window.location = ("main.html")
+        window.location = ("main.html");
     })
 
     .catch((error) => {
