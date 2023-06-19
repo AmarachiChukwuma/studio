@@ -9,8 +9,8 @@ body{
 }
 video{
     scroll-behavior: none;
-    position: fixed;
-    height: 50%;
+    position: relative;
+    height: auto;
 }
 
 
@@ -37,7 +37,7 @@ article{
     z-index: 560;
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 29%;
     width: 464px;
     box-sizing: border-box;
     padding: 40px 36px 20px;
