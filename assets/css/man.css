@@ -149,7 +149,8 @@ section{
 .home .content p{
     margin-bottom: 2rem;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 .home .content a{
     background: #fff;
