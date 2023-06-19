@@ -57,11 +57,11 @@ const firebaseConfig = {
     var password = document.getElementById("inputPassword");
 
     auth
-    .createUserWithEmailAndPassword(email.value, password.value)
+    .signInUserWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
-        alert("user signin successfuly")
+        alert("signin successfuly")
         var user = userCredential.user;
-        console.log("user", user.email);
+        console.log("user user.email");
         window.location = ("main.html");
     })
 
