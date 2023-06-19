@@ -18,7 +18,6 @@ const firebaseConfig = {
 
    let signUpButton = document.getElementById("signup");
    signUpButton.addEventListener("click", (e) => {
-
     e.preventDefault();
     console.log("signup");
 
@@ -47,70 +46,29 @@ const firebaseConfig = {
 
 
 
-//Signin Function
+// //Signin Function
 let signInButton = document.getElementById("signin");
 signInButton.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("signin");
+    console.log("signin click");
 
     var email = document.getElementById("inputEmail");
     var password = document.getElementById("inputPassword");
 
     auth
-    .signInWithEmailAndPassword(email.value, password.value)
+    .signInUserWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
-    
-    //  signed in
-    var user = userCredential.user;
-    console.log("user", user.mail);
-    alert("user signin successfuly")
-    window.location = ("main.html")
-        
+        var user = userCredential.user;
+        console.log("user", user.mail);
+        window.location = ("main.html")
+
     })
-    .catch((error) => {
+    .catch ((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
         alert(errorMessage)
-    })
+    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let signInButton = document.getElementById("signin");
-// signInButton.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     console.log("signin click");
-
-//     var email = document.getElementById("inputEmail");
-//     var password = document.getElementById("inputPassword");
-
-//     auth
-//     .signInUserWithEmailAndPassword(email.value, password.value)
-//     .then((userCredential) => {
-//         var user = userCredential.user;
-//         console.log("user", user.mail);
-//         window.location = ("logged.html")
-
-//     })
-//     .catch ((error) => {
-//         var errorCode = error.code;
-//         var errorMessage = error.message;
-//         alert(errorMessage)
-//     });
-// });
 
 
 
