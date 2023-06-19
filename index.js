@@ -29,7 +29,7 @@ const firebaseConfig = {
     .createUserWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
         location.reload();
-        alert("user Registered successfuly")
+        alert("user signup successfuly")
 
         var user = userCredential.user;
         console.log("user", user.email);
@@ -51,7 +51,7 @@ const firebaseConfig = {
 let signInButton = document.getElementById("signin");
 signInButton.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("signin click");
+    console.log("signin");
 
     var email = document.getElementById("inputEmail");
     var password = document.getElementById("inputPassword");
@@ -63,13 +63,13 @@ signInButton.addEventListener("click", (e) => {
     //  signed in
     var user = userCredential.user;
     console.log("user", user.mail);
+    alert("user signin successfuly")
     window.location = ("main.html")
+        
     })
     .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log("error code", errorCode);
-        console.log("error message", errorMessage);
         alert(errorMessage)
     })
 });
