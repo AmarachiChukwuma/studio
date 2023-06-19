@@ -82,7 +82,7 @@ form a{
     justify-content: center;
     margin-top: 18px;
 }
-.btn-f button{
+.btn-f button a{
     flex-basis: 48%;
     background: #963030;
     color: #fff;
