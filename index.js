@@ -68,9 +68,7 @@ const firebaseConfig = {
     .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log("error code", errorCode);
-        console.log("error code", errorMessage);
-        alert(errorMessage)
+        alert(errorMessage);
     });
 });
 // // //Signin Function
