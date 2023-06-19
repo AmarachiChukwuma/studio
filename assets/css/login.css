@@ -82,16 +82,18 @@ form p a{
     justify-content: center;
     margin-top: 18px;
 }
-.btn-f button{
+.btn-f button {
     flex-basis: 48%;
     background: #963030;
-    color: #fff;
     height: 40px;
     border-radius: 16px;
     border: 0;
-    font-size: 20px;
     outline: 0;
     cursor: pointer;
+}
+.btn-f button a{
+    color:#fff;
+    font-size: 20px;
 }
 .btn-f button:hover{
     color: white;
