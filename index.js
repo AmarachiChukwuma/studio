@@ -46,29 +46,56 @@ const firebaseConfig = {
 
 
 
-// //Signin Function
-let signInButton = document.getElementById("signin");
-signInButton.addEventListener("click", (e) => {
+
+
+ let signInButton = document.getElementById("signin");
+   signInButton.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("signin click");
+    console.log("signin");
 
     var email = document.getElementById("inputEmail");
     var password = document.getElementById("inputPassword");
 
     auth
-    .signInUserWithEmailAndPassword(email.value, password.value)
+    .createUserWithEmailAndPassword(email.value, password.value)
     .then((userCredential) => {
+        alert("user signin successfuly")
         var user = userCredential.user;
-        console.log("user", user.mail);
+        console.log("user", user.email);
         window.location = ("main.html")
-
     })
-    .catch ((error) => {
+
+    .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
+        console.log("error code", errorCode);
+        console.log("error code", errorMessage);
         alert(errorMessage)
     });
 });
+// // //Signin Function
+// let signInButton = document.getElementById("signin");
+// signInButton.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     console.log("signin click");
+
+//     var email = document.getElementById("inputEmail");
+//     var password = document.getElementById("inputPassword");
+
+//     auth
+//     .signInUserWithEmailAndPassword(email.value, password.value)
+//     .then((userCredential) => {
+//         var user = userCredential.user;
+//         console.log("user", user.mail);
+//         window.location = ("main.html")
+
+//     })
+//     .catch ((error) => {
+//         var errorCode = error.code;
+//         var errorMessage = error.message;
+//         alert(errorMessage)
+//     });
+// });
 
 
 
