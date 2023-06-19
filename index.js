@@ -20,7 +20,7 @@ const firebaseConfig = {
    signUpButton.addEventListener("click", (e) => {
 
     e.preventDefault();
-    console.log("registered");
+    console.log("signup");
 
     var email = document.getElementById("inputEmail");
     var password = document.getElementById("inputPassword");
