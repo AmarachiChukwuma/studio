@@ -441,27 +441,7 @@ video{
     text-align: center;
     color: #fff;
 }
-.btn-f{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 18px;
-}
-.btn-f button{
-    flex-basis: 48%;
-    background: #963030;
-    color: #fff;
-    height: 40px;
-    border-radius: 16px;
-    border: 0;
-    font-size: 20px;
-    outline: 0;
-    cursor: pointer;
-}
-.btn-f button:hover{
-    color: white;
-    transform: translateY(-.5rem);
-}
+
 
 
 @media (max-width: 867px) {
