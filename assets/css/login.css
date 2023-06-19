@@ -63,7 +63,7 @@ form p{
     font-size: 18px;
     color: #fff;
 }
-form a{
+form p a{
     margin-top: 5px;
     text-decoration: none;
     color: #963030;
@@ -76,7 +76,7 @@ form a{
 }
 
 
-.btn-f a{
+.btn-f{
     width: 100%;
     display: flex;
     justify-content: center;
