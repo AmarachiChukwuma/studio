@@ -38,7 +38,7 @@
     position: relative;
 
 }
-.input-f{
+.input-f {
     /* background: #eaeaea; */
     margin: 15px 0;
     border-radius: 3px;
@@ -76,7 +76,7 @@ form a{
 }
 
 
-.btn-f{
+.btn-f a{
     width: 100%;
     display: flex;
     justify-content: center;
